@@ -1,0 +1,46 @@
+.custom-admin-controls-open {
+
+	// Display control menu
+  .control-menu {
+     display: block;
+  }
+
+	.portlet-column-content.empty {
+		padding: 50px;
+	}
+
+}
+
+.custom-admin-controls-closed {
+
+  // Hide control menu
+  .control-menu {
+     display: none;
+  }
+
+  // Hide portlet titles
+	.portlet {
+		.portlet-topper {
+			display: none;
+		}
+
+		.portlet-content {
+			.portlet-header {
+				display: none;
+			}
+
+		}
+
+	}
+
+	// Hide visible interaction in blogs portlet when admin controls are closed
+  .portlet-blogs:hover,
+  .portlet-blogs.open {
+    .visible-interaction {
+      display: none;
+    }
+  }
+
+
+
+}

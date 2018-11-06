@@ -1,0 +1,30 @@
+.toggle-admin-mode {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 10px;
+    padding: 9px;
+    cursor: pointer;
+    transition: background-color 180ms;
+    z-index: 1000;
+
+    @media (min-width: $screen-sm-min) {
+      position: fixed;
+    }
+
+    &.show {
+        display: block;
+    }
+
+    svg {
+        fill: #fff;
+    }
+
+    &:hover {
+        background-color: #00CDFF;
+    }
+}
