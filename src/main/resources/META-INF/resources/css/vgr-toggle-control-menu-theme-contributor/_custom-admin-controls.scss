@@ -11,6 +11,26 @@
 
 }
 
+.toggle-controls {
+  &.visible-xs {
+    display: inline-block !important;
+  }
+}
+
+.controls-hidden,
+.controls-visible.signed-out {
+  .portlet > .portlet-topper {
+      display: none;
+  }
+
+  .portlet {
+    .portlet-header {
+      display: none;
+    }
+  }
+
+}
+
 .custom-admin-controls-closed {
 
   // Hide control menu
