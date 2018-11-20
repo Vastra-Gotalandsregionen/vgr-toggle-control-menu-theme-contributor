@@ -54,7 +54,7 @@ AUI().ready(
 			var bodyCssClass = customControlsStatus;
 
       // No status exists. First time. Value for SessionClicks not yet initiated.
-      if(bodyCssClass == '') {
+      if(bodyCssClass == '' || bodyCssClass == 'get') {
         bodyCssClass = CSS_CLASS_CONTROLS_OPEN;
       }
 
