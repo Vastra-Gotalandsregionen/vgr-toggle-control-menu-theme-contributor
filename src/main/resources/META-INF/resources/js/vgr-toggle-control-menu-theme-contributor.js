@@ -53,6 +53,11 @@ AUI().ready(
 
 			var bodyCssClass = customControlsStatus;
 
+      // No status exists. First time. Value for SessionClicks not yet initiated.
+      if(bodyCssClass == '') {
+        bodyCssClass = CSS_CLASS_CONTROLS_OPEN;
+      }
+
 			elBody.addClass(bodyCssClass);
 
 			if(elBody.hasClass(CSS_CLASS_CONTROLS_CLOSED)) {
