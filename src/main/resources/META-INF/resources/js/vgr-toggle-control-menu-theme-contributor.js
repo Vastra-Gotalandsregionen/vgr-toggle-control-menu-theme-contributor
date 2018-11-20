@@ -29,9 +29,11 @@ AUI().ready(
       return;
     }
 
-    Liferay.SPA.app.on('endNavigate', function() {
-      initControlsCallback(customControlsStatus);
-    });
+    if(Liferay.SPA && Liferay.SPA.app) {
+      Liferay.SPA.app.on('endNavigate', function() {
+        initControlsCallback(customControlsStatus);
+      });
+    }
 
 		// Append toggle button
 		appendToggleButton();
