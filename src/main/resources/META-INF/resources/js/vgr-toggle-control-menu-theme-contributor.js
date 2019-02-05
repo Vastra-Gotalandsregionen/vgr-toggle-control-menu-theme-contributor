@@ -1,5 +1,6 @@
 AUI().ready(
   'aui-base',
+  'liferay-store',
   function(A) {
 
 		// Custom admin controls body classes
