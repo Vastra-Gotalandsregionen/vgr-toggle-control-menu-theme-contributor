@@ -1,3 +1,7 @@
+.portlet-asset-publisher .portlet-content .portlet-body .h2 {
+  display: none;
+}
+
 .custom-admin-controls-open {
 
 	// Display control menu
@@ -9,6 +13,14 @@
 		padding: 50px;
 	}
 
+  &.controls-visible {
+
+    .portlet-asset-publisher .portlet-content .portlet-body .h2 {
+      display: block;
+    }
+
+  }
+
 }
 
 .toggle-controls {
@@ -19,6 +31,7 @@
 
 .controls-hidden,
 .controls-visible.signed-out {
+
   .portlet > .portlet-topper {
       display: none;
   }
