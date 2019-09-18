@@ -37,12 +37,12 @@ AUI().ready(
     bindSpaEndNavigate();
 
     function bindSpaEndNavigate() {
+
       spaAttemptsTicker++;
 
       if(Liferay.SPA && Liferay.SPA.app) {
 
         Liferay.SPA.app.on('endNavigate', function() {
-          //initControlsCallback(customControlsStatus);
           appendToggleButton();
         });
       } else {
@@ -145,11 +145,11 @@ AUI().ready(
 
       elBody.removeClass(CSS_CLASS_CONTROLS_CLOSED);
 
+
       elBody.addClass('has-control-menu');
-      //elBody.addClass('controls-visible');
-      //elBody.removeClass('controls-hidden');
 
       elBody.addClass(CSS_CLASS_CONTROLS_OPEN);
+
       Liferay.Store(LIFERAY_STORE_CONTROLS_KEY, CSS_CLASS_CONTROLS_OPEN);
       customControlsStatus = CSS_CLASS_CONTROLS_OPEN;
     }
@@ -160,9 +160,7 @@ AUI().ready(
       elBody.removeClass(CSS_CLASS_CONTROLS_OPEN);
 
       elBody.removeClass('has-control-menu');
-      //elBody.removeClass('controls-visible');
       elBody.removeClass('open');
-      //elBody.addClass('controls-hidden');
       elBody.addClass('closed');
 
       elBody.addClass(CSS_CLASS_CONTROLS_CLOSED);
