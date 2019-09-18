@@ -74,10 +74,11 @@ AUI().ready(
 			if(elBody.hasClass(CSS_CLASS_CONTROLS_CLOSED)) {
 	      elBody.removeClass('open');
 	      elBody.removeClass('has-control-menu');
-	      //elBody.removeClass('controls-visible');
 
-	      //elBody.addClass('controls-hidden');
-	      elBody.addClass('closed');
+        elBody.removeClass('controls-visible');
+	      elBody.addClass('controls-hidden');
+
+        elBody.addClass('closed');
 
 	      elProductMenu.removeClass('open');
 	      elProductMenu.addClass('closed');
