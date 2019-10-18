@@ -132,8 +132,10 @@ AUI().ready(
 
       if(elBody.hasClass(CSS_CLASS_CONTROLS_CLOSED)) {
         openControls();
+        window.location.reload();
       } else if(elBody.hasClass(CSS_CLASS_CONTROLS_OPEN)) {
         closeControls();
+        window.location.reload();
       }
 			else {
         // Something is not right.
