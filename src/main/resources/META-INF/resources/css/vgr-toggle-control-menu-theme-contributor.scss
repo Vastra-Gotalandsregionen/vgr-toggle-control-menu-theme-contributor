@@ -3,3 +3,7 @@
 
 @import "vgr-toggle-control-menu-theme-contributor/admin-toggle";
 @import "vgr-toggle-control-menu-theme-contributor/custom-admin-controls";
+
+body.custom-admin-controls-open .portlet-column-content.empty {
+    padding: 10px; /* Override 50px */
+}
