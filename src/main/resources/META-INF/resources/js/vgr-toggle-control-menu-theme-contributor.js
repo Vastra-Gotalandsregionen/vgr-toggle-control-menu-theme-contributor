@@ -128,14 +128,16 @@ AUI().ready(
 		}
 
     function toggleControlMenu() {
-			var elBody = A.one('body');
-
+      var elBody = A.one('body');
+      
       if(elBody.hasClass(CSS_CLASS_CONTROLS_CLOSED)) {
         openControls();
-        window.location.reload();
+        // Seems not needed in 7.2
+        //window.location.reload();
       } else if(elBody.hasClass(CSS_CLASS_CONTROLS_OPEN)) {
         closeControls();
-        window.location.reload();
+        // Seems not needed in 7.2
+        //window.location.reload();
       }
 			else {
         // Something is not right.
